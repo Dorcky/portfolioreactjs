@@ -1,0 +1,211 @@
+:root {
+    --primary-color: #78654b;
+    --accent-color: #ffffff; /* Blanc */
+    --text-color: #ffffff; /* Blanc */
+    --brown-light: #D69B65; /* Marron clair */
+    --brown-medium: #291a03; /* Marron moyen */
+    --brown-dark: #6B4F3B; /* Marron foncé */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.95) !important; /* Noir transparent */
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Icône du hamburger en blanc */
+.navbar-toggler-icon {
+background-color: var(--accent-color); /* Blanc */
+}
+
+
+#hero {
+    background: linear-gradient(135deg, var(--brown-dark), var(--brown-light));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-img {
+    border: 5px solid var(--accent-color);
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+    height: 100%;
+    color: var(--text-color);
+}
+
+.card-text, .card-title, .card-body p {
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-custom {
+    background-color: var(--brown-medium);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    transition: all 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: var(--brown-light);
+    color:white;
+    transform: translateY(-2px);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#contact {
+    background: linear-gradient(45deg, var(--brown-medium), var(--brown-light));
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-color);
+    border-color: var(--brown-medium);
+}
+
+.form-control::placeholder {
+    color: var(--text-color);
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+footer h3 {
+    text-align: justify;
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+footer p, footer ul {
+    text-align: justify;
+} 
+
+
+#services .card {
+padding: 0 !important; /* Supprime le padding de la carte */
+overflow: hidden; /* Empêche le débordement de l'image */
+}
+
+#services .card-body {
+padding: 1.5rem; /* Ajoute du padding uniquement au contenu */
+}
+
+.service-img {
+height: 400px;
+width: 100%;
+object-fit: cover;
+margin: 0; /* Supprime les marges */
+border-radius: 0; /* Supprime l'arrondi si présent */
+display: block; /* Élimine tout espace blanc en dessous de l'image */
+}
+
+/* Ajustement pour garder le style de carte cohérent */
+#services .card {
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+transition: transform 0.3s;
+height: 100%;
+}
+
+.project-img {
+    height: 300px; /* Ajustez cette hauteur à la taille souhaitée */
+    object-fit: cover; /* L'image va couvrir l'espace sans déformation */
+    width: 100%; /* La largeur de l'image prendra 100% de la largeur du conteneur */
+}
+
+#portfolio .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s;
+        height: 100%;
+        display: flex; /* Ajout de Flexbox */
+        flex-direction: column; /* Aligne les éléments de la carte en colonne */
+        color: var(--text-color);
+    }
+
+    #portfolio .card-body {
+        flex: 1; /* Cela permet au corps de la carte de prendre tout l'espace disponible */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Assure que le bouton est en bas */
+    }
+
+    #portfolio .btn-custom {
+        margin-top: auto; /* Permet de pousser le bouton vers le bas */
+    }
