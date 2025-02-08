@@ -2,7 +2,7 @@ import React from 'react';
 
 const Portfolio = () => {
     return (
-        <section id="portfolio" className="py-5">
+        <section id="portfolio" className="py-5"style={{ marginTop: '-50px' }}>
             <div className="container">
                 <h2 className="section-title text-center">Mes Projets</h2>
                 <div className="row g-4">

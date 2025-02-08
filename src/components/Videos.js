@@ -2,7 +2,7 @@ import React from 'react';
 
 const Videos = () => {
     return (
-        <section id="videos" className="py-5">
+        <section id="videos" className="py-5" style={{ marginTop: '-50px' }}>
             <div className="container">
                 <h2 className="section-title text-center">Mes Vidéos</h2>
                 <div className="row g-4">
