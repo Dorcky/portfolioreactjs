@@ -21,7 +21,7 @@ const Testimonials = () => {
                             <div className="card-body">
                                 <blockquote className="mb-0">
                                     <p>"Travailler avec Wesky a été une expérience enrichissante. Il maîtrise parfaitement les technologies qu'il utilise et il sait s'adapter à n'importe quelle situation."</p>
-                                    <footer className="text-end">- Ryan Coutard</footer>
+                                    <footer className="text-end">- Mahmoud Alhadji </footer>
                                 </blockquote>
                             </div>
                         </div>
