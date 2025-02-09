@@ -210,13 +210,35 @@ height: 100%;
         margin-top: auto; /* Permet de pousser le bouton vers le bas */
     }
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    /* Ajustement pour les tablettes (taille d'écran moyenne) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #services .card {
+        height: auto; /* La hauteur est ajustée automatiquement */
     }
+
+    .service-img, .project-img {
+        height: 200px; /* Ajuster la hauteur des images pour les tablettes */
+        object-fit: cover; /* Assurer que l'image garde un bon ratio sans se déformer */
+    }
+
+    #portfolio .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Ajustement du texte pour les cartes */
+    .card-body {
+        padding: 1rem; /* Un peu moins de padding pour plus d'espace */
+    }
+
+    /* Modification des titres pour s'adapter à l'écran */
+    .section-title {
+        font-size: 2rem; /* Réduire la taille du titre */
+    }
+
+    /* Ajuster les tailles des boutons */
+    .btn-custom {
+        padding: 8px 20px; /* Taille du bouton réduite pour les tablettes */
+    }
+}
+
