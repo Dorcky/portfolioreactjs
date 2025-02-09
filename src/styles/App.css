@@ -242,3 +242,65 @@ height: 100%;
     }
 }
 
+/* Ajustement pour les tablettes en mode paysage */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #services .card {
+        height: auto; /* La hauteur est ajustée automatiquement */
+    }
+
+    .service-img, .project-img {
+        height: 280px; /* Ajuster la hauteur des images pour les tablettes */
+        object-fit: cover; /* Assurer que l'image garde un bon ratio sans se déformer */
+    }
+
+   
+    /* Ajustement du texte pour les cartes */
+    .card-body {
+        padding: 1.2rem; /* Un peu plus de padding pour plus d'espace en paysage */
+    }
+
+    /* Modification des titres pour s'adapter à l'écran */
+    .section-title {
+        font-size: 2.2rem; /* Augmenter la taille du titre en mode paysage */
+    }
+
+    /* Ajuster les tailles des boutons */
+    .btn-custom {
+        padding: 10px 25px; /* Taille du bouton augmentée pour plus de confort */
+    }
+}
+
+
+/* Pour les écrans entre 1280px et 1800px de large */
+@media (min-width: 1280px) and (max-width: 1800px) {
+
+    /* Ajustement de la hauteur des cartes */
+    #services .card {
+        height: auto; /* La hauteur s'ajuste automatiquement */
+        margin: 20px 0; /* Ajouter un peu d'espace entre les cartes */
+    }
+
+    /* Ajustement des images dans les services et projets */
+    .service-img, .project-img {
+        height: 350px; /* Ajuster la hauteur des images */
+        object-fit: cover; /* Assurer que l'image garde un bon ratio sans déformation */
+    }
+
+   
+
+    /* Ajustement du texte pour les cartes */
+    .card-body {
+        padding: 1.5rem; /* Ajouter un peu plus de padding */
+    }
+
+    /* Modification de la taille des titres */
+    .section-title {
+        font-size: 2.5rem; /* Augmenter la taille du titre pour mieux correspondre à la taille de l'écran */
+    }
+
+    /* Ajustement des tailles des boutons */
+    .btn-custom {
+        padding: 10px 25px; /* Un bouton plus large pour les écrans plus grands */
+        font-size: 1.2rem; /* Augmenter légèrement la taille de la police du bouton */
+    }
+}
