@@ -209,98 +209,197 @@ height: 100%;
     #portfolio .btn-custom {
         margin-top: auto; /* Permet de pousser le bouton vers le bas */
     }
-
-    /* Ajustement pour les tablettes (taille d'écran moyenne) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    #services .card {
-        height: auto; /* La hauteur est ajustée automatiquement */
+/* Tablette - Portrait (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #services .card,
+    #portfolio .card {
+        height: auto;
+        margin: 15px 0;
     }
 
-    .service-img, .project-img {
-        height: 200px; /* Ajuster la hauteur des images pour les tablettes */
-        object-fit: cover; /* Assurer que l'image garde un bon ratio sans se déformer */
+    .service-img,
+    .project-img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .btn-custom {
+        padding: 8px 20px;
     }
 
     #portfolio .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s;
+        height: 100%;
+        display: flex; /* Ajout de Flexbox */
+        flex-direction: column; /* Aligne les éléments de la carte en colonne */
+        color: var(--text-color);
+    }
+
+    #portfolio .card-body {
+        flex: 1; /* Cela permet au corps de la carte de prendre tout l'espace disponible */
         display: flex;
         flex-direction: column;
+        justify-content: space-between; /* Assure que le bouton est en bas */
     }
 
-    /* Ajustement du texte pour les cartes */
-    .card-body {
-        padding: 1rem; /* Un peu moins de padding pour plus d'espace */
-    }
-
-    /* Modification des titres pour s'adapter à l'écran */
-    .section-title {
-        font-size: 2rem; /* Réduire la taille du titre */
-    }
-
-    /* Ajuster les tailles des boutons */
-    .btn-custom {
-        padding: 8px 20px; /* Taille du bouton réduite pour les tablettes */
+    #portfolio .btn-custom {
+        margin-top: auto; /* Permet de pousser le bouton vers le bas */
     }
 }
 
-/* Ajustement pour les tablettes en mode paysage */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    #services .card {
-        height: auto; /* La hauteur est ajustée automatiquement */
+/* Tablette - Paysage (1024px - 1366px) */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    #services .card,
+    #portfolio .card {
+        height: auto;
+        margin: 20px 0;
     }
 
-    .service-img, .project-img {
-        height: 280px; /* Ajuster la hauteur des images pour les tablettes */
-        object-fit: cover; /* Assurer que l'image garde un bon ratio sans se déformer */
+    .service-img,
+    .project-img {
+        height: 300px;
+        object-fit: cover;
     }
 
-   
-    /* Ajustement du texte pour les cartes */
     .card-body {
-        padding: 1.2rem; /* Un peu plus de padding pour plus d'espace en paysage */
+        padding: 1.5rem;
     }
 
-    /* Modification des titres pour s'adapter à l'écran */
     .section-title {
-        font-size: 2.2rem; /* Augmenter la taille du titre en mode paysage */
+        font-size: 2.2rem;
     }
 
-    /* Ajuster les tailles des boutons */
     .btn-custom {
-        padding: 10px 25px; /* Taille du bouton augmentée pour plus de confort */
+        padding: 10px 25px;
+    }
+
+    #portfolio .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s;
+        height: 100%;
+        display: flex; /* Ajout de Flexbox */
+        flex-direction: column; /* Aligne les éléments de la carte en colonne */
+        color: var(--text-color);
+    }
+
+    #portfolio .card-body {
+        flex: 1; /* Cela permet au corps de la carte de prendre tout l'espace disponible */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Assure que le bouton est en bas */
+    }
+
+    #portfolio .btn-custom {
+        margin-top: auto; /* Permet de pousser le bouton vers le bas */
     }
 }
 
-
-/* Pour les écrans entre 1280px et 1800px de large */
-@media (min-width: 1280px) and (max-width: 1800px) {
-
-    /* Ajustement de la hauteur des cartes */
-    #services .card {
-        height: auto; /* La hauteur s'ajuste automatiquement */
-        margin: 20px 0; /* Ajouter un peu d'espace entre les cartes */
+/* Mode paysage spécifique pour les petits écrans (jusqu'à 1024px) */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    #services .card,
+    #portfolio .card {
+        height: auto;
     }
 
-    /* Ajustement des images dans les services et projets */
-    .service-img, .project-img {
-        height: 350px; /* Ajuster la hauteur des images */
-        object-fit: cover; /* Assurer que l'image garde un bon ratio sans déformation */
+    .service-img,
+    .project-img {
+        height: 300px;
     }
 
-   
-
-    /* Ajustement du texte pour les cartes */
     .card-body {
-        padding: 1.5rem; /* Ajouter un peu plus de padding */
+        padding: 1rem;
     }
 
-    /* Modification de la taille des titres */
+    #hero {
+        margin-top: 60px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #portfolio .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s;
+        height: 100%;
+        display: flex; /* Ajout de Flexbox */
+        flex-direction: column; /* Aligne les éléments de la carte en colonne */
+        color: var(--text-color);
+    }
+
+    #portfolio .card-body {
+        flex: 1; /* Cela permet au corps de la carte de prendre tout l'espace disponible */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Assure que le bouton est en bas */
+    }
+
+    #portfolio .btn-custom {
+        margin-top: auto; /* Permet de pousser le bouton vers le bas */
+    }
+}
+
+/* Petits écrans et orientation portrait */
+@media screen and (max-width: 767px) {
+    #services .card,
+    #portfolio .card {
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .service-img,
+    .project-img {
+        height: 350px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
     .section-title {
-        font-size: 2.5rem; /* Augmenter la taille du titre pour mieux correspondre à la taille de l'écran */
+        font-size: 1.8rem;
     }
 
-    /* Ajustement des tailles des boutons */
     .btn-custom {
-        padding: 10px 25px; /* Un bouton plus large pour les écrans plus grands */
-        font-size: 1.2rem; /* Augmenter légèrement la taille de la police du bouton */
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 720px) {  
+    .service-img,
+    .project-img {
+        height: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    .service-img,
+    .project-img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 740px) and (orientation: landscape) {
+    .service-img,
+    .project-img {
+        height: 500px;
     }
 }
